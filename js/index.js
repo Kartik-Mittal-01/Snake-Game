@@ -32,7 +32,7 @@ function isCollide(snake) {
         }
     }
     // If you bump into the wall
-    if(snake[0].x >= 18 || snake[0].x <=0 || snake[0].y >= 18 || snake[0].y <=0){
+    if(snake[0].x >= 30 || snake[0].x <=0 || snake[0].y >= 30 || snake[0].y <=0){
         return true;
     }
         
@@ -63,7 +63,7 @@ function gameEngine(){
         scoreBox.innerHTML = "Score: " + score;
         snakeArr.unshift({x: snakeArr[0].x + inputDir.x, y: snakeArr[0].y + inputDir.y});
         let a = 2;
-        let b = 16;
+        let b = 28;
         food = {x: Math.round(a + (b-a)* Math.random()), y: Math.round(a + (b-a)* Math.random())}
     }
 
